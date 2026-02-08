@@ -32,8 +32,8 @@ pip install mmcv tqdm matplotlib scikit-learn opencv-python numpy==1.24.3
 Download the dataset [MSRS](https://github.com/Linfeng-Tang/MSRS) | [FMB](https://github.com/JinyuanLiu-CV/SegMiF) | [PST900](https://github.com/ShreyasSkandanS/pst900_thermal_rgb) | [CART](https://github.com/aerorobotics/caltech-aerial-rgbt-dataset) | [SUS](https://github.com/xiaodonguo/SUS_dataset).
 
 
-**2. Download Checkpoints**
-Download pre-train and fine-tune model checkpoints from .
+**2. Download Checkpoints**  
+Download pre-train and fine-tune model checkpoints from [here](https://pan.baidu.com/s/1yMqykExCmHpSY1L8vvBIAA), code:0808.
 |Encoder| MSRS | FMB | PST900 | CART | SUS |
 |------|-------|-----|--------|------|-----|
 |TUNI-T| 78.6      | 62.4 |86.4 |73.5 |82.1|
