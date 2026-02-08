@@ -10,7 +10,7 @@ This repository serves as an extension to the paper "TUNI: Real-time RGB-T Seman
 We have submitted this paper to IEEE TCSVT. To facilitate the review process, we release the evaluation code, experimental results, and pre-trained model weights in this repository.
 
 ## 1. 🌟  NEWS
-- [2026/01/31] The conference version of TUNI has been accpected by ICRA 2026. You can find [paper](https://arxiv.org/abs/2509.10005) and [code](https://github.com/xiaodonguo/TUNI) here.
+- [2026/01/31] The conference version of TUNI has been accpected by ICRA 2026 ([paper](https://arxiv.org/abs/2509.10005), [code](https://github.com/xiaodonguo/TUNI))
 - [2026/02/07] The journal version of TUNI has submitted to IEEE TCSVT.
 - [2026/02/08] We release the evaluation code, experimental results, and pre-trained model weights for journal version.
 - [In Future] The training code will be released when our paper is accepted.
@@ -19,13 +19,34 @@ We have submitted this paper to IEEE TCSVT. To facilitate the review process, we
 **0. Install**
 
 ```bash
-conda create -n TUNI python=3.10-y
-conda activate dformer
+conda create -n TUNI python=3.9 -y
+conda activate TUNI
 
 # CUDA 11.8
-conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
 
-pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.1/index.html
-
-pip install tqdm opencv-python scipy tensorboardX tabulate easydict ftfy regex
+pip install mmcv tqdm matplotlib scikit-learn opencv-python numpy==1.24.3
 ```
+
+**1. Download Datasets**  
+Download the dataset [MSRS](https://github.com/Linfeng-Tang/MSRS) | [FMB](https://github.com/JinyuanLiu-CV/SegMiF) | [PST900](https://github.com/ShreyasSkandanS/pst900_thermal_rgb) | [CART](https://github.com/aerorobotics/caltech-aerial-rgbt-dataset) | [SUS](https://github.com/xiaodonguo/SUS_dataset).
+
+
+**2. Download Checkpoints**
+Download pre-train and fine-tune model checkpoints from .
+|Encoder| MSRS | FMB | PST900 | CART | SUS |
+|------|-------|-----|--------|------|-----|
+|TUNI-T| 78.6      | 62.4 |86.4 |73.5 |82.1|
+|TUNI-S| 79.7     | 63.5    |87.3| 75.5| 82.8|
+|TUNI-B| 80.7      | 66.3   |89.1| 75.7| 83.9|
+
+**3. evaluation**
+
+```bash
+python evaluate.py
+```
+## 🚩 Performance
+
+### Acknowledgment
+
+Our code is heavily based on [sRGB-TIR](https://github.com/RPM-Robotics-Lab/sRGB-TIR/tree/main) and [DFormer](https://github.com/VCIP-RGBD/DFormer/tree/main), thanks for their excellent work!
