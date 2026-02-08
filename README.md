@@ -45,8 +45,8 @@ Download pre-train and fine-tune model checkpoints from [here](https://pan.baidu
 ```bash
 python evaluate.py
 ```
-## 🚩 Performance
+## 3. 🚩 Performance
 
-### Acknowledgment
+## 4. 🌹 Acknowledgment
 
 Our code is heavily based on [sRGB-TIR](https://github.com/RPM-Robotics-Lab/sRGB-TIR/tree/main) and [DFormer](https://github.com/VCIP-RGBD/DFormer/tree/main), thanks for their excellent work!
