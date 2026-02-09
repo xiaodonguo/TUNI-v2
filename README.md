@@ -1,4 +1,4 @@
-# TUNI-v2 (TCSVT version)
+# TUNI (Journal Version)
 TUNI: Unifying Pre-training and Fine-tuning with Modality-Aware Mutual Learning and Rectification for RGB-T Semantic Segmentation
 ## Brief Introduction
 This repository serves as an extension to the paper "TUNI: Real-time RGB-T Semantic Segmentation with Unified Multi-Modal Feature Extraction and Cross-Modal Feature Fusion", which has been accpeted by ICRA 2026. We include a summary of the following differences between the journal submission and the conference version:
@@ -32,8 +32,8 @@ pip install mmcv tqdm matplotlib scikit-learn opencv-python numpy==1.24.3
 Download the dataset [MSRS](https://github.com/Linfeng-Tang/MSRS) | [FMB](https://github.com/JinyuanLiu-CV/SegMiF) | [PST900](https://github.com/ShreyasSkandanS/pst900_thermal_rgb) | [CART](https://github.com/aerorobotics/caltech-aerial-rgbt-dataset) | [SUS](https://github.com/xiaodonguo/SUS_dataset).
 
 
-**2. Download Checkpoints**
-Download pre-train and fine-tune model checkpoints from .
+**2. Download Checkpoints**  
+Download pre-train and fine-tune model checkpoints from [here](https://pan.baidu.com/s/1yMqykExCmHpSY1L8vvBIAA), code:0808.
 |Encoder| MSRS | FMB | PST900 | CART | SUS |
 |------|-------|-----|--------|------|-----|
 |TUNI-T| 78.6      | 62.4 |86.4 |73.5 |82.1|
@@ -45,8 +45,8 @@ Download pre-train and fine-tune model checkpoints from .
 ```bash
 python evaluate.py
 ```
-## 🚩 Performance
+## 3. 🚩 Performance
 
-### Acknowledgment
+## 4. 🌹 Acknowledgment
 
 Our code is heavily based on [sRGB-TIR](https://github.com/RPM-Robotics-Lab/sRGB-TIR/tree/main) and [DFormer](https://github.com/VCIP-RGBD/DFormer/tree/main), thanks for their excellent work!
