@@ -46,7 +46,7 @@ pip install mmcv tqdm matplotlib scikit-learn opencv-python numpy==1.24.3
 ```
 
 **1. Download Datasets**  
-Download the dataset [MSRS](https://github.com/Linfeng-Tang/MSRS) | [FMB](https://github.com/JinyuanLiu-CV/SegMiF) | [PST900](https://github.com/ShreyasSkandanS/pst900_thermal_rgb) | [CART](https://github.com/aerorobotics/caltech-aerial-rgbt-dataset) | [SUS](https://github.com/xiaodonguo/SUS_dataset).
+Download the [dataset](https://pan.baidu.com/s/16PDNN6MYW5Z9mFDfqKbZQA) following our organization, code: 0909.
 
 
 **2. Download Checkpoints**  
