@@ -81,3 +81,7 @@ python evaluate.py
 ## 4. 🌹 Acknowledgment
 
 Our code is heavily based on [sRGB-TIR](https://github.com/RPM-Robotics-Lab/sRGB-TIR/tree/main) and [DFormer](https://github.com/VCIP-RGBD/DFormer/tree/main), thanks for their excellent work!
+
+## 5. ✉️ Contact
+
+Email: guoxd@bit.edu.cn   Wechat: xiaodonglalaa
