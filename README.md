@@ -80,7 +80,7 @@ python evaluate.py
 
 <p align="center">
     <video 
-        src="https://github.com/user-attachments/assets/767a5c0b-888b-44f0-b6de-53dc1f13a6f4" 
+        src="https://github.com/user-attachments/assets/7d54a10d-8bfd-428b-b1f6-1bb66edcf45b" 
         >
     </video>
     <br />
