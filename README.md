@@ -78,7 +78,16 @@ python evaluate.py
     </em>
 </p>
 
-<video src="video demo.mp4" controls width="700"></video>
+<p align="center">
+    <video 
+        src="https://github.com/user-attachments/assets/767a5c0b-888b-44f0-b6de-53dc1f13a6f4" 
+        >
+    </video>
+    <br />
+    <em>
+    A video demo that visually shows the performance improvements over the baseline and ablation baselines.
+    </em>
+</p>
 
 ## 4. 🌹 Acknowledgment
 
