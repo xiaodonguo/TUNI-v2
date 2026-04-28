@@ -78,7 +78,7 @@ python evaluate.py
     </em>
 </p>
 
-[Watch demo video](./demo.mp4)
+<video src="video demo.mp4" controls width="700"></video>
 
 ## 4. 🌹 Acknowledgment
 
