@@ -22,11 +22,16 @@ Contribution:
 </p>
 
 <p align="center">
-    <img src="images/fig2.jpg" width="600"  width="1200"/> <br />
+    <img src="images/fig4.png" width="600"  width="1200"/> <br />
     <em> 
-    Figure 2: Illustration of the TUNI encoder. The TUNI encoder consists of multiple stacked RGB-T encoder blocks, each of which includes R-R LM, R-T LM,
-and R-T GM. It performs multi-modal feature extraction and cross-modal feature fusion simultaneously, achieving modality-specific feature extraction while
-improving fusion efficiency.
+    Figure 3: Illustration of the MI-CML.
+    </em>
+</p>
+
+<p align="center">
+    <img src="images/fig5.png" width="300"  width="300"/> <br />
+    <em> 
+    Figure 4: Illustration of the MRL.
     </em>
 </p>
 
@@ -38,6 +43,7 @@ improving fusion efficiency.
 - [2026/01/31] TUNI is accpected by ICRA 2026 ([paper](https://arxiv.org/abs/2509.10005), [code](https://github.com/xiaodonguo/TUNI))
 
 ## 2. 🚀 Get Start
+### Finte-tuning
 **0. Install**
 
 ```bash
