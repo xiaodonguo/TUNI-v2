@@ -1,18 +1,23 @@
-# TUNI (Journal Version)
-TUNI: Unifying Pre-training and Fine-tuning with Modality-Aware Mutual Learning and Rectification for RGB-T Semantic Segmentation
+# TUNI-v2
+This is the official repository for "TUNI: Unifying Pre-training and Fine-tuning with Modality-Aware Mutual Learning and Rectification for RGB-T Semantic Segmentation".
 ## Brief Introduction
-This repository serves as an extension to the paper "TUNI: Real-time RGB-T Semantic Segmentation with Unified Multi-Modal Feature Extraction and Cross-Modal Feature Fusion", which has been accpeted by ICRA 2026. We include a summary of the following differences between the journal submission and the conference version:
-1. We propose a novel multi-modal pre-training strategy, named **M**odal-**I**nverted **C**ontrastive **M**utual **L**earning (MI-CML).
-2. We propose a novel **M**odality **R**ectification **L**earning (MRL) decoder to fully exploit thermal information during the fine-tuning phase.
-3. A further trade-off between accuracy and model lightweightness is explored by introducing two encoder variants, TUNI-T and TUNI-B, which respectively target lightweight deployment and high-performance requirements.
-4. We have expanded our experiments by including 6 SOTA models: SGFNet , MCNet-T, Sigma, CM-SSM, FGDNet-S, and TUNI. In addition, we conduct additional experiments on two public datasets, MSRS and SUS, to further verify the generalization capability of our model.
-
-We have submitted this paper to IEEE TCSVT. To facilitate the review process, we release the evaluation code, experimental results, and pre-trained model weights in this repository.
 
 <p align="center">
     <img src="images/fig1.jpg" width="600"  width="1200"/> <br />
     <em> 
-    Figure 1: Three RGB-T/RGB-D semantic segmentation frameworks: (a) Vanilla RGB-T segmentation framework. It pre-trains an RGB encoder on ImageNet-1K, and fine-tunes it with the cross-modal feature fusion module and segmentation head on segmentation datasets. (b) DFormer. It pre-trains an RGB-D encoder with RGB and pseudo-depth images from ImageNet-1K, therefore performs multi-modal feature extraction and cross-modal feature fusion simultaneously. (c) TUNI. It first pre-trains an delicate RGB-T encoder with RGB and pseudo-thermal images from ImageNet-1K, incorporating with modality-aware mutual learning to alleviate modality-bias. The modality rectification learning is then introduced during the fine-tuning phase to make full use of the thermal information.
+    Figure 1: Three RGB-T/RGB-D semantic segmentation frameworks: (a) Vanilla RGB-T segmentation framework. (b) DFormer. (c) TUNI.
+    </em>
+</p>
+
+Contribution:
+1. We propose an RGB-T encoder, named the **TUNI encoder**, for simultaneous multimodal feature extraction and cross-modal feature fusion.
+1. We propose a novel multi-modal pre-training strategy, named **M**odal-**I**nverted **C**ontrastive **M**utual **L**earning (MI-CML).
+2. We propose a novel **M**odality **R**ectification **L**earning (MRL) decoder to fully exploit thermal information during the fine-tuning phase.
+
+<p align="center">
+    <img src="images/fig2.jpg" width="600"  width="1200"/> <br />
+    <em> 
+    Figure 2: Illustration of the TUNI encoder.
     </em>
 </p>
 
@@ -27,10 +32,10 @@ improving fusion efficiency.
 
 
 ## 1. 🌟  NEWS
-- [2026/01/31] The conference version of TUNI has been accpected by ICRA 2026 ([paper](https://arxiv.org/abs/2509.10005), [code](https://github.com/xiaodonguo/TUNI))
-- [2026/02/07] The journal version of TUNI has submitted to IEEE TCSVT.
-- [2026/02/08] We release the evaluation code, experimental results, and pre-trained model weights for journal version.
-- [In Future] The training code will be released when our paper is accepted.
+- [2026/06/20] Pret-raining and fine-tuning code is released.
+- [2026/06/01] TUNI-v2 is accepted by IEEE TCSVT.
+- [2026/02/07] TUNI-v2 is submitted to IEEE TCSVT.
+- [2026/01/31] TUNI is accpected by ICRA 2026 ([paper](https://arxiv.org/abs/2509.10005), [code](https://github.com/xiaodonguo/TUNI))
 
 ## 2. 🚀 Get Start
 **0. Install**
