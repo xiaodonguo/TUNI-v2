@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from proposed.backbone_model.TUNI import *
 from proposed.decoder.MLPHead import Decoder_MLP
-# from proposed.decoder.DualMLPHead import Decoder_DualMLP
+from proposed.decoder.DualMLPHead import Decoder_DualMLP
 import torch.nn.functional as F
 
 
@@ -54,24 +54,24 @@ class Model(nn.Module):
         emb_c = 256
         self.encoder = Encoder_RGBX(mode=mode, input=input)
         channels = self.encoder.enc.dims
-        # self.decoder = Decoder_DualMLP(in_channels=channels, embed_dim=emb_c, num_classes=n_class, dropout_ratio=0.1)
-        self.decoder = Decoder_MLP(in_channels=channels, embed_dim=emb_c, num_classes=n_class, dropout_ratio=0.1)
+        self.decoder = Decoder_DualMLP(in_channels=channels, embed_dim=emb_c, num_classes=n_class, dropout_ratio=0.1)
+        # self.decoder = Decoder_MLP(in_channels=channels, embed_dim=emb_c, num_classes=n_class, dropout_ratio=0.1)
     def forward(self, rgb, t=None):
         if t == None:
             t = rgb
         f_rgb, f_t = self.encoder(rgb, t)
-        sem = self.decoder(f_rgb)
-        sem = F.interpolate(sem, scale_factor=4, mode='bilinear', align_corners=False)
-        return sem
-        # if self.training:
-        #     sem1, sem2 = self.decoder(f_rgb, f_t)
-        #     sem1 = F.interpolate(sem1, scale_factor=4, mode='bilinear', align_corners=False)
-        #     sem2 = F.interpolate(sem2, scale_factor=4, mode='bilinear', align_corners=False)
-        #     return sem1, sem2
-        # else:
-        #     sem1 = self.decoder(f_rgb, f_t)
-        #     sem1 = F.interpolate(sem1, scale_factor=4, mode='bilinear', align_corners=False)
-        #     return sem1
+        # sem = self.decoder(f_rgb)
+        # sem = F.interpolate(sem, scale_factor=4, mode='bilinear', align_corners=False)
+        # return sem
+        if self.training:
+            sem1, sem2 = self.decoder(f_rgb, f_t)
+            sem1 = F.interpolate(sem1, scale_factor=4, mode='bilinear', align_corners=False)
+            sem2 = F.interpolate(sem2, scale_factor=4, mode='bilinear', align_corners=False)
+            return sem1, sem2
+        else:
+            sem1 = self.decoder(f_rgb, f_t)
+            sem1 = F.interpolate(sem1, scale_factor=4, mode='bilinear', align_corners=False)
+            return sem1
 
 
 if __name__ == '__main__':

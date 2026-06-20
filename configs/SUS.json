@@ -1,5 +1,5 @@
 {
-    "model_name": "TUNI_T",
+    "model_name": "TUNI_B",
     "inputs": "rgbt",
     "dataset": "SUS",
     "root": "/home/ubuntu/dataset/SUS",

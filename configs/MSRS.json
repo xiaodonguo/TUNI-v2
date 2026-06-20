@@ -1,5 +1,5 @@
 {
-    "model_name": "DFormer_S",
+    "model_name": "TUNI_B",
     "inputs": "rgbt",
     "dataset": "MSRS",
     "root": "/home/ubuntu/dataset/MSRS",

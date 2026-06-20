@@ -1,5 +1,5 @@
 {
-    "model_name": "model2",
+    "model_name": "TUNI_B",
     "inputs": "rgbt",
     "dataset": "FMB",
     "root": "/home/ubuntu/dataset/FMB",

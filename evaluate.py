@@ -10,10 +10,9 @@ from toolbox import get_dataset, get_metrics
 from toolbox.metrics_CART import averageMeter, runningScore
 from toolbox import class_to_RGB, get_model
 
-def evaluate(logdir, save_predict=False, options=['val', 'test', 'test_day', 'test_night'], prefix=''):
+def evaluate(save_predict=False, options=['val', 'test', 'test_day', 'test_night'], prefix=''):
     # 加载配置文件cfg
-    file = args.config
-    with open(os.path.join(logdir, file), 'r') as fp:
+    with open(args.config, 'r') as fp:
         cfg = json.load(fp)
     assert cfg is not None
 
@@ -78,11 +77,11 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description="evaluate")
     parser.add_argument("--gpu_ids", type=str, default='0', help="set cuda device id")
-    parser.add_argument("--config", type=str, default="/home/ubuntu/code/github/TUNI-v2/configs/CART.json")
+    parser.add_argument("--config", type=str, default="configs/CART.json")
     parser.add_argument("--load_pth", type=str,
                         default="/home/ubuntu/code/pretrain_weight/TUNI-TCSVT-upload/fintune/CART/CART_base.pth")
     parser.add_argument("--save_path", type=str,
                         default="1")
     parser.add_argument("-s", type=bool, default=True, help="save predict or not")
     args = parser.parse_args()
-    evaluate(args.config, save_predict=args.s, options=['test'], prefix='')
+    evaluate(save_predict=args.s, options=['test'], prefix='')
