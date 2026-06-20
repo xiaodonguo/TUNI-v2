@@ -1,4 +1,9 @@
 # TUNI-v2
+<p align="left">
+  <a href='https://arxiv.org/abs/2509.10005'>
+  <img src='https://img.shields.io/badge/Arxiv-2509.10005-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a> 
+
+</p>
 This is the official repository for "TUNI: Unifying Pre-training and Fine-tuning with Modality-Aware Mutual Learning and Rectification for RGB-T Semantic Segmentation".
 ## Brief Introduction
 
@@ -37,7 +42,7 @@ Contribution:
 
 
 ## 1. 🌟  NEWS
-- [2026/06/20] Fine-tuning code is released.
+- [2026/06/20] Fine-tuning code is released (The pre-training code is being organize).
 - [2026/06/01] TUNI-v2 is accepted by IEEE TCSVT.
 - [2026/02/07] TUNI-v2 is submitted to IEEE TCSVT.
 - [2026/01/31] TUNI is accpected by ICRA 2026 ([paper](https://arxiv.org/abs/2509.10005), [code](https://github.com/xiaodonguo/TUNI))
@@ -111,4 +116,26 @@ Our code is heavily based on [sRGB-TIR](https://github.com/RPM-Robotics-Lab/sRGB
 
 ## 5. ✉️ Contact
 
-Email: guoxd@bit.edu.cn   Wechat: xiaodonglalaa
+Email: guoxd@bit.edu.cn  
+Wechat: xiaodonglalaa
+
+## 6. ⭐ Citation
+
+If you find this repository useful in your research, please consider giving a star ⭐ and a citation.
+```
+@ARTICLE{TUNIv2,
+  author={Guo, Xiaodong and Guo, Xianda and Liu, Tong and Deng, Zhihong and Peng, Yanlun and Li, Xiang and Zhou, Wujie},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={TUNI: Unifying Pre-training and Fine-tuning with Modality-Aware Mutual Learning and Rectification for RGB-T Semantic Segmentation}, 
+  year={2026},
+  doi={10.1109/TCSVT.2026.3701706}
+}
+
+@INPROCEEDINGS{TUNI,
+  author={Guo, Xiaodong and Liu, Tong and Li, Yike and Lin, Zi'ang and Deng, Zhihong},
+  booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={TUNI: Real-time RGB-T Semantic Segmentation with Unified Multi-Modal Feature Extraction and Cross-Modal Feature Fusion}, 
+  year={2026}
+}
+
+```
