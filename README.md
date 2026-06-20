@@ -37,7 +37,7 @@ Contribution:
 
 
 ## 1. 🌟  NEWS
-- [2026/06/20] Pret-raining and fine-tuning code is released.
+- [2026/06/20] Fine-tuning code is released.
 - [2026/06/01] TUNI-v2 is accepted by IEEE TCSVT.
 - [2026/02/07] TUNI-v2 is submitted to IEEE TCSVT.
 - [2026/01/31] TUNI is accpected by ICRA 2026 ([paper](https://arxiv.org/abs/2509.10005), [code](https://github.com/xiaodonguo/TUNI))
