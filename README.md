@@ -47,12 +47,12 @@ Contribution:
 **0. Install**
 
 ```bash
+git colone https://github.com/xiaodonguo/TUNI-v2.git
+cd TUNI-v2.git
 conda create -n TUNI python=3.9 -y
 conda activate TUNI
-
 # CUDA 11.8
 conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
-
 pip install mmcv tqdm matplotlib scikit-learn opencv-python numpy==1.24.3
 ```
 
@@ -68,10 +68,15 @@ Download pre-train and fine-tune model checkpoints from [here](https://pan.baidu
 |TUNI-S| 79.7     | 63.5    |87.3| 75.5| 82.8|
 |TUNI-B| 80.7      | 66.3   |89.1| 75.7| 83.9|
 
-**3. evaluation**
+**3. Train**
+1) dowanload the pretrained weights of TUNI encoder and change the path in proposed/model.py
+```bash
+python train.py --config configs/MSRS.json
+```
+**4. Evaluation**
 
 ```bash
-python evaluate.py
+python evaluate.py --config configs/MSRS.json --load_pth your_weights_path
 ```
 ## 3. 🚩 Performance
 
