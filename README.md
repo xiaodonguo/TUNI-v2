@@ -139,3 +139,7 @@ If you find this repository useful in your research, please consider giving a st
 }
 
 ```
+
+### 7. License
+
+Code in this repo is for non-commercial use only.
