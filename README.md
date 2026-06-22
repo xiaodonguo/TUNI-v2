@@ -48,6 +48,10 @@ Contribution:
 - [2026/01/31] TUNI is accpected by ICRA 2026 ([paper](https://arxiv.org/abs/2509.10005), [code](https://github.com/xiaodonguo/TUNI))
 
 ## 2. 🚀 Get Start
+### Pre-training
+
+Please refer to [RGBT-Pretrain](https://github.com/xiaodonguo/RGBT-Pretrain) for the pre-training details.
+
 ### Finte-tuning
 **0. Install**
 
