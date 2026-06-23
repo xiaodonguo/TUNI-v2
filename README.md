@@ -2,7 +2,8 @@
 <p align="left">
   <a href='https://arxiv.org/abs/2509.10005'>
   <img src='https://img.shields.io/badge/Arxiv-2509.10005-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a> 
-
+<a href='https://arxiv.org/abs/2509.10005v1'>
+  <img src='https://img.shields.io/badge/Arxiv-2509.10005v1-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a> 
 </p>
 This is the official repository for "TUNI: Unifying Pre-training and Fine-tuning with Modality-Aware Mutual Learning and Rectification for RGB-T Semantic Segmentation".  
 
